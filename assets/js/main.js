@@ -295,7 +295,7 @@ function handleFormSubmit(e) {
   submitBtn.disabled = true;
   
   // Construct data for Google Forms
-  const googleFormData = new FormData();
+  const googleFormData = new URLSearchParams();
   googleFormData.append('entry.665789752', name);     // Name
   googleFormData.append('entry.1764999526', phone);   // Phone
   googleFormData.append('entry.722616374', message);  // Message
@@ -309,7 +309,10 @@ function handleFormSubmit(e) {
   fetch(actionUrl, {
     method: 'POST',
     mode: 'no-cors',
-    body: googleFormData
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: googleFormData.toString()
   }).then(() => {
     // Show success message
     alert('Thank you for your inquiry! We will get back to you soon.');
