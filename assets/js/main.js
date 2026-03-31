@@ -275,6 +275,9 @@ function scrollToContact() {
 function handleFormSubmit(e) {
   e.preventDefault();
   
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  const originalBtnText = submitBtn.textContent;
+  
   const formData = new FormData(contactForm);
   const name = formData.get('name');
   const email = formData.get('email');
@@ -287,14 +290,38 @@ function handleFormSubmit(e) {
     return;
   }
   
-  // Here you would normally send the data to a server
-  console.log('Form submitted:', { name, email, phone, message });
+  // Update button state
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
   
-  // Show success message
-  alert('Thank you for your inquiry! We will get back to you soon.');
+  // Construct data for Google Forms
+  const googleFormData = new FormData();
+  googleFormData.append('entry.665789752', name);     // Name
+  googleFormData.append('entry.1764999526', phone);   // Phone
+  googleFormData.append('entry.722616374', message);  // Message
+  if (email) {
+    googleFormData.append('emailAddress', email);     // Email
+  }
+
+  // Submit using fetch with 'no-cors' mode
+  const actionUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScCh7s3wwIAzLkXu9pttdnNS-JOL1iiw0G4MQMU-nOGxTbGEA/formResponse';
   
-  // Reset form
-  contactForm.reset();
+  fetch(actionUrl, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: googleFormData
+  }).then(() => {
+    // Show success message
+    alert('Thank you for your inquiry! We will get back to you soon.');
+    contactForm.reset();
+  }).catch((err) => {
+    console.error('Error submitting form:', err);
+    alert('Failed to send the message. Please try again later.');
+  }).finally(() => {
+    // Reset button state
+    submitBtn.textContent = originalBtnText;
+    submitBtn.disabled = false;
+  });
 }
 
 // =======================================
