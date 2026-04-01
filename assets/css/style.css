@@ -97,11 +97,19 @@ h3 {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #0F0F0F;
   text-decoration: none;
+}
+
+.brand-logo {
+  height: 3.5rem;
+  width: auto;
 }
 
 .nav-menu {
