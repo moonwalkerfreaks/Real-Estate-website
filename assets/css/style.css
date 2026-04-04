@@ -647,7 +647,7 @@ a:hover {
     padding: 2rem;
   }
 
-  /* ---- Flip cards: no 3D flip on mobile ---- */
+  /* ---- Flip cards: no 3D flip on mobile — simple tap-to-reveal instead ---- */
   .flip-card {
     flex: 1 1 100%;
     height: auto;
@@ -662,21 +662,35 @@ a:hover {
     height: auto;
   }
 
-  /* Hide the decorative front face on mobile;
-     show the back (content) face directly as a plain card */
+  /* Front face: show by default on mobile */
   .flip-card-front {
-    display: none;
-  }
-
-  .flip-card-back {
     position: static;
     transform: none !important;
     height: auto;
-    overflow: visible; /* never clip any content */
-    padding: 2rem;     /* even padding on all four sides */
+    overflow: visible;
+    padding: 2rem;
   }
 
-  /* Neutralise all flip triggers on touch */
+  /* Back face: hidden by default, revealed on tap */
+  .flip-card-back {
+    display: none;
+    position: static;
+    transform: none !important;
+    height: auto;
+    overflow: visible;
+    padding: 2rem;
+  }
+
+  /* When JS adds .flipped: swap front out, back in */
+  .flip-card.flipped .flip-card-front {
+    display: none;
+  }
+
+  .flip-card.flipped .flip-card-back {
+    display: block;
+  }
+
+  /* Neutralise all 3D flip triggers */
   .flip-card:hover .flip-card-inner,
   .flip-card.flipped .flip-card-inner {
     transform: none !important;
