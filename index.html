@@ -1,173 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luxury Estates - Premium Real Estate</title>
-  <meta name="description" content="Discover exceptional luxury properties in prime locations. Your dream home awaits.">
-
-  <!-- Google Fonts -->
+  <title>Greenland Properties - Premium Real Estate</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-  <!-- ======================================= -->
-  <!-- Header / Navigation -->
-  <!-- ======================================= -->
-  <header id="header" class="header">
-    <div class="nav-container">
-      <a href="#home" class="logo">
-        <img src="assets/images/Logo.png" alt="Greenland Properties Logo" class="brand-logo">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Logo.png" alt="Greenland Properties Logo" class="brand-logo" onerror="this.src='https://placehold.co/200x50?text=LOGO'">
         Greenland Properties
       </a>
-
       <nav>
-        <ul id="nav-menu" class="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#listings" class="nav-link">Listings</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="areas.html" class="nav-link">Areas</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-
-      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </header>
 
-  <!-- ======================================= -->
-  <!-- Hero Section -->
-  <!-- ======================================= -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Exceptional Properties. Extraordinary Living.</h1>
-      <p>Discover luxury homes in the world's most prestigious locations.</p>
-      <a href="#listings" class="cta-button">View Properties</a>
-    </div>
-  </section>
-
-  <!-- ======================================= -->
-  <!-- Listings Section -->
-  <!-- ======================================= -->
-  <section id="listings" class="section properties-section">
-    <div class="container">
-      <h2 class="text-center">Featured Properties</h2>
-      <div id="properties-grid" class="properties-grid">
-        <!-- Properties will be loaded dynamically -->
-        <div style="text-align: center; color: #666; grid-column: 1/-1;">
-          <p>Loading properties...</p>
+  <main id="page-content" class="fade-wrapper">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content text-center">
+        <h1 class="reveal">Find Your Dream Property With Confidence</h1>
+        <p class="reveal">Explore premium markets with our expert guidance. We don't just sell properties; we deliver unmatched investment opportunities in highly sought-after locations. Secure your luxurious future today.</p>
+        <div class="reveal">
+          <a href="contact.html" class="btn">Get Protected Investment</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======================================= -->
-  <!-- Property Modal -->
-  <!-- ======================================= -->
-  <div id="property-modal" class="modal">
-    <div class="modal-content">
-      <button id="modal-close" class="modal-close" aria-label="Close modal">&times;</button>
-      <div id="modal-details">
-        <!-- Modal content will be populated dynamically -->
+    <!-- HIGHLIGHTS -->
+    <section class="section bg-light">
+      <div class="container">
+        <h2 class="text-center reveal">Market Highlights</h2>
+        <div class="dense-grid">
+          <div class="card reveal">
+            <h3><i class="fas fa-chart-line"></i> Constant Growth</h3>
+            <p>Real estate properties in our targeted zones have seen a massive 25% year-over-year appreciation.</p>
+          </div>
+          <div class="card reveal">
+            <h3><i class="fas fa-shield-alt"></i> 100% Legal Safety</h3>
+            <p>Every plot and flat is thoroughly verified by our expert legal team ensuring zero disputes.</p>
+          </div>
+          <div class="card reveal">
+            <h3><i class="fas fa-map-marked-alt"></i> Prime Locations</h3>
+            <p>We only list properties that have pre-approved infrastructure development plans within 5 miles.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- ======================================= -->
-  <!-- About Section -->
-  <!-- ======================================= -->
-  <section id="about" class="section about-section">
-    <div class="container">
-      <h2 class="text-center">About Luxury Estates</h2>
-      <div class="about-content">
-        <p>With over 20 years of experience in luxury real estate, we specialize in connecting discerning clients with
-          extraordinary properties. Our portfolio features meticulously curated homes in the most sought-after
-          locations, each representing the pinnacle of design, craftsmanship, and lifestyle.</p>
-        <p>We understand that purchasing a luxury home is more than a transaction—it's a life-changing experience. Our
-          dedicated team provides personalized service, market expertise, and unparalleled access to the finest
-          properties.</p>
-        <p>Whether you're seeking a contemporary penthouse, a waterfront estate, or a historic mansion, we're committed
-          to helping you find not just a house, but a home that reflects your unique vision and aspirations.</p>
+    <!-- FEATURED PROPERTIES -->
+    <section class="section">
+      <div class="container">
+        <h2 class="reveal">Featured Properties</h2>
+        <div class="dense-grid">
+          <!-- Property 1 -->
+          <div class="property-card reveal">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop" alt="Property" class="property-img">
+            <div class="property-info">
+              <div class="property-price">₹1.25 Cr</div>
+              <h3>Luxury Villa - Sector 42</h3>
+              <p><i class="fas fa-map-marker-alt" style="color:var(--accent-green)"></i> Premium location with 4 bedrooms.</p>
+            </div>
+          </div>
+          <!-- Property 2 -->
+          <div class="property-card reveal">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" alt="Property" class="property-img">
+            <div class="property-info">
+              <div class="property-price">₹85 Lacs</div>
+              <h3>Modern Apartment</h3>
+              <p><i class="fas fa-map-marker-alt" style="color:var(--accent-green)"></i> Fully furnished 3BHK high-rise.</p>
+            </div>
+          </div>
+          <!-- Property 3 -->
+          <div class="property-card reveal">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Property" class="property-img">
+            <div class="property-info">
+              <div class="property-price">₹45 Lacs</div>
+              <h3>Investment Plot</h3>
+              <p><i class="fas fa-map-marker-alt" style="color:var(--accent-green)"></i> NA sanctioned plot ready for construction.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======================================= -->
-  <!-- Contact Section -->
-  <!-- ======================================= -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <h2 class="text-center">Get In Touch</h2>
-      <p class="text-center" style="color: #666; margin-bottom: 2rem;">Ready to find your dream home? Contact us today.
-      </p>
-
-      <form id="contact-form" class="contact-form">
-        <div class="form-group">
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required>
+    <!-- WHY CHOOSE US -->
+    <section class="section bg-dark">
+      <div class="container text-center">
+        <h2 class="reveal">Why Choose Greenland?</h2>
+        <div class="crowded-flex reveal" style="width: 100%; margin: 4rem auto 0; gap: 2rem; justify-content: center;">
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 3rem 2rem; border-radius: 16px; flex: 1 1 350px; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+            <i class="fas fa-check-circle" style="color:var(--accent-green); font-size: 3rem; margin-bottom:1.5rem;"></i>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Experience</h3>
+            <p style="font-size: 1.15rem;">Decades of transparent and honest premium real estate market experience.</p>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 3rem 2rem; border-radius: 16px; flex: 1 1 350px; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+            <i class="fas fa-shield-alt" style="color:var(--accent-green); font-size: 3rem; margin-bottom:1.5rem;"></i>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Security</h3>
+            <p style="font-size: 1.15rem;">We handle A to Z of property documentation securely and cleanly.</p>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 3rem 2rem; border-radius: 16px; flex: 1 1 350px; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+            <i class="fas fa-chart-line" style="color:var(--accent-green); font-size: 3rem; margin-bottom:1.5rem;"></i>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">High ROI</h3>
+            <p style="font-size: 1.15rem;">High ROI investment strategies strictly backed by deep market research.</p>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone">
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" required placeholder="Tell us about your dream property..."></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-
-      <div class="contact-info">
-        <p><i class="fas fa-phone"></i> (+91) 7038 36 0686</p>
-        <p><i class="fas fa-envelope"></i> riyaz@greenlandprop.in</p>
-        <p><i class="fas fa-map-marker-alt"></i> Undri, Pune, Maharashtra, India - 411 060</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======================================= -->
-  <!-- Footer -->
-  <!-- ======================================= -->
+    <!-- CTA -->
+    <section class="section" style="background: linear-gradient(135deg, var(--accent-green) 0%, #047857 100%); color: white; text-align: center; padding: 8rem 0;">
+      <div class="container reveal">
+        <h2 style="color: white; font-size: 4rem;">Ready To Make A Move?</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.5rem; max-width: 900px; margin: 0 auto 3rem;">Don't let the best deals slip away. Our experts are ready to guide you to the perfect premium property.</p>
+        <a href="contact.html" class="btn btn-secondary" style="padding: 1.3rem 3.5rem; font-size: 1.25rem;">Contact Us Today</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2026 Greenland Properties. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <div class="container">
+      <div class="footer-grid reveal">
+        <div>
+          <h3>Greenland Properties</h3>
+          <p style="margin-top: 1rem;">Your trusted partner in premium real estate investments.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul style="margin-top: 1rem;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul style="margin-top: 1rem;">
+            <li><i class="fas fa-phone" style="width: 25px;"></i> (+91) 7038 36 0686</li>
+            <li><i class="fas fa-envelope" style="width: 25px;"></i> contact@greenlandprop.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Greenland Properties. All rights reserved.
       </div>
     </div>
   </footer>
 
-  <!-- ======================================= -->
-  <!-- JavaScript -->
-  <!-- ======================================= -->
-  <script src="assets/js/main.js?v=1.1"></script>
-
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
