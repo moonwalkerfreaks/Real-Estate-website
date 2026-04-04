@@ -553,11 +553,11 @@ a:hover {
   /* Hero fixes */
   .hero {
     padding: 8rem 0 5rem;
-    background-attachment: scroll; /* fixed bg causes jitter/scroll bug on iOS */
+    background-attachment: scroll;
   }
 
   .hero::before {
-    display: none; /* 600px element overflows the mobile viewport - hide it */
+    display: none;
   }
 
   /* Header — logo left, hamburger right */
@@ -565,12 +565,15 @@ a:hover {
     padding: 0.75rem 1rem;
   }
 
-  .nav-container {
-    justify-content: flex-start; /* logo anchors to left edge */
+  /* Collapse the <nav> wrapper to 0 width so the logo and hamburger
+     are the only two visible flex children — keeps logo at the far left */
+  nav {
+    flex: 0 0 0;
+    overflow: hidden;
   }
 
-  .nav-toggle {
-    margin-left: auto; /* push hamburger to far right */
+  .nav-container {
+    justify-content: flex-start;
   }
 
   /* Shrink logo text so it never wraps */
@@ -583,7 +586,7 @@ a:hover {
     height: 3rem;
   }
 
-  /* ---- Hamburger button ---- */
+  /* ---- Hamburger button (single merged block) ---- */
   .nav-toggle {
     display: flex;
     flex-direction: column;
@@ -594,6 +597,7 @@ a:hover {
     cursor: pointer;
     padding: 6px;
     z-index: 1100;
+    margin-left: auto; /* push to far right */
   }
 
   .nav-toggle span {
@@ -610,7 +614,7 @@ a:hover {
   .nav-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
   .nav-toggle.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
-  /* ---- Full-screen mobile menu ---- */
+  /* ---- Full-screen mobile menu overlay ---- */
   .nav-menu {
     display: none;
     position: fixed;
@@ -633,7 +637,7 @@ a:hover {
     font-size: 1.5rem;
   }
 
-  /* ---- Dense grid: stack to single column on mobile ---- */
+  /* ---- Dense grid: stack to single column ---- */
   .dense-grid > * {
     flex: 1 1 100%;
     max-width: 100%;
@@ -643,34 +647,36 @@ a:hover {
     padding: 2rem;
   }
 
-  /* ---- Flip cards on mobile: disable the 3D flip, stack faces as plain cards ---- */
+  /* ---- Flip cards: no 3D flip on mobile ---- */
   .flip-card {
     flex: 1 1 100%;
-    height: auto;        /* let content determine height */
+    height: auto;
     perspective: none;
   }
 
   .flip-card-inner {
-    transform: none !important; /* no 3D rotation */
+    transform: none !important;
     transform-style: flat;
     transition: none;
     position: static;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
   }
 
-  .flip-card-front,
+  /* Hide the decorative front face on mobile;
+     show the back (content) face directly as a plain card */
+  .flip-card-front {
+    display: none;
+  }
+
   .flip-card-back {
-    position: static;           /* remove absolute positioning — ends overlap */
-    transform: none !important; /* remove the rotateY */
+    position: static;
+    transform: none !important;
     height: auto;
-    backface-visibility: visible;
-    border-radius: 12px;
+    overflow: visible; /* never clip any content */
+    padding: 2rem;     /* even padding on all four sides */
   }
 
-  /* Disable all flip triggers on touch */
+  /* Neutralise all flip triggers on touch */
   .flip-card:hover .flip-card-inner,
   .flip-card.flipped .flip-card-inner {
     transform: none !important;
