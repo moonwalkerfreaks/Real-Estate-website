@@ -129,4 +129,32 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    // 6. Hamburger Menu Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenuEl = document.querySelector('.nav-menu');
+
+    if (navToggle && navMenuEl) {
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navToggle.classList.toggle('open');
+            navMenuEl.classList.toggle('open');
+        });
+
+        // Close menu when any nav link is clicked
+        navMenuEl.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('open');
+                navMenuEl.classList.remove('open');
+            });
+        });
+
+        // Close menu on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-menu') && !e.target.closest('.nav-toggle')) {
+                navToggle.classList.remove('open');
+                navMenuEl.classList.remove('open');
+            }
+        });
+    }
 });
