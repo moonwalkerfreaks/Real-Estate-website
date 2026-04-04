@@ -650,34 +650,36 @@ a:hover {
   /* ---- Flip cards: no 3D flip on mobile — simple tap-to-reveal instead ---- */
   .flip-card {
     flex: 1 1 100%;
-    height: auto;
+    height: auto !important;
     perspective: none;
+    overflow: visible !important;
   }
 
   .flip-card-inner {
     transform: none !important;
     transform-style: flat;
     transition: none;
-    position: static;
-    height: auto;
+    position: static !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   /* Front face: show by default on mobile */
   .flip-card-front {
-    position: static;
+    position: static !important;
     transform: none !important;
-    height: auto;
-    overflow: visible;
+    height: auto !important;
+    overflow: visible !important;
     padding: 2rem;
   }
 
   /* Back face: hidden by default, revealed on tap */
   .flip-card-back {
     display: none;
-    position: static;
+    position: static !important;
     transform: none !important;
-    height: auto;
-    overflow: visible;
+    height: auto !important;
+    overflow: visible !important;
     padding: 2rem;
   }
 
