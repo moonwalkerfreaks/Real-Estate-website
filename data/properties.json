@@ -2,6 +2,7 @@
   "properties": [
     {
       "id": 1,
+      "featured": true,
       "title": "Modern Downtown Penthouse",
       "price": "$2,450,000",
       "location": "Manhattan, NY",
@@ -23,6 +24,7 @@
     },
     {
       "id": 2,
+      "featured": true,
       "title": "Luxury Waterfront Villa",
       "price": "$3,200,000",
       "location": "Miami Beach, FL",
@@ -44,6 +46,7 @@
     },
     {
       "id": 3,
+      "featured": true,
       "title": "Elegant Family Estate",
       "price": "$1,850,000",
       "location": "Greenwich, CT",

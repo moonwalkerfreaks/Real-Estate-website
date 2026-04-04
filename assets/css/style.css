@@ -1,15 +1,19 @@
 /* ======================================= */
 /* Premium Reset & Variables */
 /* ======================================= */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
   --primary-white: #FFFFFF;
-  --secondary-bg: #F8FAFC; /* Frosty gray */
-  --primary-dark-blue: #0A192F; /* Premium tech navy */
+  --secondary-bg: #F8FAFC;
+  /* Frosty gray */
+  --primary-dark-blue: #0A192F;
+  /* Premium tech navy */
   --secondary-blue: #112240;
-  --accent-green: #059669; /* Emerald premium */
+  --accent-green: #059669;
+  /* Emerald premium */
   --accent-green-hover: #10B981;
+  --text-light: #64748b;
+  /* Muted secondary text */
 
   --heading-font: 'Outfit', sans-serif;
   --body-font: 'Plus Jakarta Sans', sans-serif;
@@ -25,7 +29,8 @@
 
 body {
   font-family: var(--body-font);
-  color: #334155; /* Slate color for premium readability */
+  color: #334155;
+  /* Slate color for premium readability */
   background-color: var(--secondary-bg);
   line-height: 1.6;
   overflow-x: hidden;
@@ -36,7 +41,12 @@ body {
 /* ======================================= */
 /* Typography */
 /* ======================================= */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   font-weight: 800;
   line-height: 1.1;
@@ -45,12 +55,32 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-h1 { font-size: clamp(3rem, 6vw, 5rem); }
-h2 { font-size: clamp(2.2rem, 4vw, 3.5rem); }
-h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; }
-h4 { font-size: 1.25rem; font-weight: 600; }
+h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
 
-p { margin-bottom: 1.5rem; font-size: 1.125rem; }
+h2 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.heading-white {
+  color: var(--primary-white);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
 
 /* ======================================= */
 /* Seamless Transitions & Interaction */
@@ -75,12 +105,25 @@ p { margin-bottom: 1.5rem; font-size: 1.125rem; }
   }
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Scroll Reveals */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
   transition: var(--transition-smooth);
 }
+
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
@@ -92,6 +135,7 @@ a {
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 a:hover {
   color: var(--accent-green-hover);
 }
@@ -110,20 +154,43 @@ a:hover {
 }
 
 .dense-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
   margin-top: 3rem;
+}
+
+.dense-grid>* {
+  flex: 1 1 320px;
+  max-width: 480px;
+}
+
+/* Center content inside plain .card children of dense-grid */
+.dense-grid>.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dense-grid>.card p {
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .crowded-flex {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: stretch;
   gap: 2.5rem;
 }
 
-.text-center { text-align: center; }
+.text-center {
+  text-align: center;
+}
 
 /* Buttons  */
 .btn {
@@ -153,7 +220,7 @@ a:hover {
 .btn-secondary {
   background-color: var(--primary-white);
   color: var(--primary-dark-blue);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .btn-secondary:hover {
@@ -167,19 +234,21 @@ a:hover {
 /* ======================================= */
 .header {
   position: fixed;
-  top: 0; left:0; right:0;
+  top: 0;
+  left: 0;
+  right: 0;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   z-index: 1000;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: var(--transition-smooth);
 }
 
 .header.scrolled {
   padding: 0.5rem 0;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }
 
 .nav-container {
@@ -221,7 +290,9 @@ a:hover {
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0; left: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 2px;
   background: var(--accent-green);
   transform: scaleX(0);
@@ -229,11 +300,13 @@ a:hover {
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--primary-dark-blue);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   transform: scaleX(1);
   transform-origin: left;
 }
@@ -255,9 +328,11 @@ a:hover {
 .hero::before {
   content: '';
   position: absolute;
-  top: -10%; right: -5%;
-  width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, rgba(255,255,255,0) 70%);
+  top: -10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
   border-radius: 50%;
   z-index: 0;
 }
@@ -271,34 +346,46 @@ a:hover {
 .hero h1 {
   color: var(--primary-white);
   margin-bottom: 1.5rem;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
   color: #E2E8F0;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 
 /* ======================================= */
 /* Premium Cards */
 /* ======================================= */
-.bg-light { background-color: var(--primary-white); }
-.bg-dark { background-color: var(--primary-dark-blue); color: var(--primary-white); }
-.bg-dark h2, .bg-dark h3, .bg-dark p { color: var(--primary-white); }
+.bg-light {
+  background-color: var(--primary-white);
+}
+
+.bg-dark {
+  background-color: var(--primary-dark-blue);
+  color: var(--primary-white);
+}
+
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark p {
+  color: var(--primary-white);
+}
 
 .card {
   background: var(--primary-white);
   border-radius: 16px;
   padding: 3rem;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.02);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.02);
   transition: var(--transition-smooth);
 }
 
-.card:hover {
+/* Lift on hover — exclude flip-card faces so they don't fight the flip animation */
+.card:not(.flip-card-front):not(.flip-card-back):hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 }
 
 .card h3 {
@@ -306,6 +393,7 @@ a:hover {
   align-items: center;
   gap: 1rem;
 }
+
 .card h3 i {
   color: var(--accent-green);
   font-size: 1.8rem;
@@ -316,13 +404,13 @@ a:hover {
   background: var(--primary-white);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   transition: var(--transition-smooth);
 }
 
 .property-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 .property-img {
@@ -355,7 +443,7 @@ a:hover {
   background: var(--primary-white);
   padding: 3.5rem;
   border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
 }
 
 .form-group {
@@ -369,7 +457,7 @@ a:hover {
   color: var(--primary-dark-blue);
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
   width: 100%;
   padding: 1.2rem 1.5rem;
@@ -381,7 +469,7 @@ a:hover {
   transition: var(--transition-smooth);
 }
 
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--accent-green);
@@ -403,7 +491,9 @@ a:hover {
 .footer::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 4px;
   background: linear-gradient(90deg, var(--accent-green) 0%, #34D399 100%);
 }
@@ -441,7 +531,7 @@ a:hover {
 .copyright {
   text-align: center;
   padding-top: 3rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   font-size: 0.9rem;
 }
 
@@ -449,9 +539,101 @@ a:hover {
 /* Responsive */
 /* ======================================= */
 @media (max-width: 768px) {
-  .hero { padding: 8rem 0 5rem; }
-  .header { padding: 1rem; }
-  .nav-menu { display: none; } /* Would need a hamburger in strict production, simplified for flow */
-  .dense-grid { grid-template-columns: 1fr; }
-  .card { padding: 2rem; }
+  .hero {
+    padding: 8rem 0 5rem;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  /* Would need a hamburger in strict production, simplified for flow */
+  .dense-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+}
+
+/* Dark section card fix */
+.bg-dark .card {
+  background: rgba(255, 255, 255, 0.05);
+  /* glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.bg-dark .card p {
+  color: #CBD5F5;
+  /* softer readable text */
+}
+
+.bg-dark .card h3 {
+  color: #FFFFFF;
+}
+
+.flip-card {
+  background: transparent;
+  width: 100%;
+  height: 320px;
+  perspective: 1000px;
+  flex: 1 1 400px;
+  transition: transform 0.3s ease;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover (desktop) */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back shared */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+/* Front Style */
+.flip-card-front {
+  background: white;
+}
+
+/* Back Style */
+.flip-card-back {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  /* dark luxury tone */
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back ul {
+  padding-left: 20px;
+}
+
+.flip-card-back li {
+  margin-bottom: 8px;
+}
+
+/* Mobile: flip on click via JS .flipped class */
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
 }
