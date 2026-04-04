@@ -52,4 +52,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 4. Fetch and Render Properties
+    const propertiesGrid = document.getElementById('all-properties-grid');
+    if (propertiesGrid) {
+        // Show loading state
+        propertiesGrid.innerHTML = '<div style="grid-column: 1 / -1; text-align: center; padding: 3rem;"><i class="fas fa-spinner fa-spin fa-3x" style="color: var(--accent-green);"></i></div>';
+
+        fetch('data/properties.json')
+            .then(response => response.json())
+            .then(data => {
+                propertiesGrid.innerHTML = '';
+                if (data.properties && data.properties.length > 0) {
+                    data.properties.forEach((property, index) => {
+                        const delay = (index % 3) * 0.1; // Staggered animation
+                        const featuresList = (property.features || []).slice(0, 3).join(' • '); // Show top 3 features
+
+                        const propertyHTML = `
+                            <div class="property-card" style="animation: fadeUp 0.6s ease-out ${delay}s both;">
+                                <img src="${property.image}" alt="${property.title}" class="property-img" onerror="this.src='https://placehold.co/600x400?text=Property'">
+                                <div class="property-info">
+                                    <div class="property-price">${property.price}</div>
+                                    <h3>${property.title}</h3>
+                                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color:var(--accent-green)"></i> ${property.location}</p>
+                                    <p style="font-size: 0.9rem; color: #64748b;"><i class="fas fa-info-circle"></i> ${featuresList}</p>
+                                </div>
+                            </div>
+                        `;
+                        propertiesGrid.innerHTML += propertyHTML;
+                    });
+                } else {
+                    propertiesGrid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; font-size: 1.2rem;">No properties available at the moment.</p>';
+                }
+            })
+            .catch(error => {
+                console.error("Error fetching properties:", error);
+                propertiesGrid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: red;">Failed to load properties. Please try again later.</p>';
+            });
+    }
 });

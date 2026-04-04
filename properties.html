@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Areas Served - Greenland Properties</title>
+  <title>Properties - Greenland Properties</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +17,16 @@
   <header class="header">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="assets/images/Logo.png" alt="Logo" class="brand-logo" onerror="this.src='https://placehold.co/200x50?text=LOGO'">
+        <img src="assets/images/Logo.png" alt="Greenland Properties Logo" class="brand-logo" onerror="this.src='https://placehold.co/200x50?text=LOGO'">
         Greenland Properties
       </a>
       <nav>
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="properties.html" class="nav-link">Properties</a></li>
+          <li><a href="properties.html" class="nav-link active">Properties</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="areas.html" class="nav-link active">Areas</a></li>
+          <li><a href="areas.html" class="nav-link">Areas</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -34,40 +34,29 @@
   </header>
 
   <main id="page-content" class="fade-wrapper">
-    <!-- HERO -->
-    <section class="hero" style="padding: 10rem 0 6rem;">
-      <div class="container hero-content text-center">
-        <h1 class="reveal">Locations Served</h1>
-        <p class="reveal" style="font-size:1.3rem;">We dominate the local real estate market across these rapidly developing nodes.</p>
+    <!-- PAGE HEADER -->
+    <section class="section" style="padding-top: 150px; background: linear-gradient(135deg, rgba(4,120,87,0.1) 0%, rgba(15,23,42,0.05) 100%);">
+      <div class="container text-center">
+        <h1 class="reveal">Our Premium Properties</h1>
+        <p class="reveal" style="max-width: 700px; margin: 1rem auto 0; font-size: 1.1rem; color: var(--text-light);">Explore our exclusive collection of luxury villas, modern apartments, and prime investment plots carefully curated for the highest ROI.</p>
       </div>
     </section>
 
-    <!-- AREAS LIST -->
+    <!-- ALL PROPERTIES GRID -->
     <section class="section">
       <div class="container">
-        <div class="dense-grid">
-          
-          <div class="card reveal">
-            <h3><i class="fas fa-map-marker-alt" style="color: var(--primary-dark-blue);"></i> Undri & Pisoli</h3>
-            <p>Rapidly developing residential hubs offering a perfect mix of serene environment, good schools, and connectivity to IT parks. High demand for 2 and 3 BHK flats.</p>
-          </div>
-
-          <div class="card reveal">
-            <h3><i class="fas fa-map-marker-alt" style="color: var(--primary-dark-blue);"></i> Kondhwa & NIBM</h3>
-            <p>Established premium localities boasting excellent infrastructure, high-end commercial spaces, and luxurious residential projects.</p>
-          </div>
-
-          <div class="card reveal">
-            <h3><i class="fas fa-map-marker-alt" style="color: var(--primary-dark-blue);"></i> Hadapsar & Magarpatta</h3>
-            <p>The IT heartland. Perfect for investors looking for high rental yields. We deal extensively in commercial lands and apartments.</p>
-          </div>
-
-          <div class="card reveal">
-            <h3><i class="fas fa-map-marker-alt" style="color: var(--primary-dark-blue);"></i> Wagholi & Kharadi</h3>
-            <p>The eastern corridor's fastest-appreciating zones. Highly recommended for long-term plot investments and corporate flats.</p>
-          </div>
-
+        <div class="dense-grid" id="all-properties-grid">
+          <!-- Properties will be injected here via JavaScript -->
         </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: linear-gradient(135deg, var(--accent-green) 0%, #047857 100%); color: white; text-align: center; padding: 6rem 0;">
+      <div class="container reveal">
+        <h2 style="color: white; font-size: 3rem;">Can't Find What You're Looking For?</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; max-width: 800px; margin: 1rem auto 2rem;">Contact our expert real estate agents and let us help you find the perfect property tailored to your needs.</p>
+        <a href="contact.html" class="btn btn-secondary" style="padding: 1rem 3rem; font-size: 1.1rem;">Contact Us</a>
       </div>
     </section>
   </main>
