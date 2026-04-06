@@ -2,7 +2,7 @@
   "properties": [
   {
     "id": 1,
-    "featured": false,
+    "featured": true,
     "title": "Residential Plot in Wagholi, Pune",
     "price": "₹2,80,00,000",
     "location": "Wagholi, Pune",
@@ -17,7 +17,6 @@
   },
   {
     "id": 2,
-    "featured": false,
     "title": "Farm Plot in New Mahabaleshwar, Satara",
     "price": "₹12,00,000",
     "location": "New Mahabaleshwar, Satara",
@@ -32,7 +31,6 @@
   },
   {
     "id": 3,
-    "featured": false,
     "title": "1 BHK Flat in Panvel, Raigad",
     "price": "₹65,00,000",
     "location": "Panvel, Raigad",
@@ -47,7 +45,6 @@
   },
   {
     "id": 4,
-    "featured": false,
     "title": "NA Plot in Shiroli, Kolhapur",
     "price": "₹1,60,00,000",
     "location": "Shiroli, Kolhapur",
@@ -62,7 +59,6 @@
   },
   {
     "id": 5,
-    "featured": false,
     "title": "Commercial Shop in Panvel, Raigad",
     "price": "₹1,50,00,000",
     "location": "Panvel, Raigad",
@@ -77,7 +73,6 @@
   },
   {
     "id": 6,
-    "featured": false,
     "title": "NA Plot in Panvel, Raigad",
     "price": "Inquire",
     "location": "Panvel, Raigad",
@@ -122,7 +117,6 @@
   },
   {
     "id": 9,
-    "featured": true,
     "title": "5 BHK Premium Apartment in Pune",
     "price": "₹4.50 Cr +",
     "location": "Pune",
