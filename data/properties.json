@@ -4,37 +4,37 @@
     "id": 1,
     "featured": false,
     "title": "Residential Plot in Wagholi, Pune",
-    "price": "₹28000000",
+    "price": "₹2,80,00,000",
     "location": "Wagholi, Pune",
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+    "image": "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder1.jpg?raw=true",
     "images": [
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop"
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder1.jpg?raw=true",
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder2.jpg?raw=true",
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder3.jpg?raw=true"
     ],
-    "description": "Residential Plot located in Wagholi, Pune developed by Private. Status: Available.",
-    "features": ["Residential Plot", "Size: 1500", "Developer: Private", "Approval: NA", "Status: Available", "Contact: 7038360686"]
+    "description": "Residential Plot located in Wagholi, Pune.",
+    "features": ["Residential Plot", "Size: 1500 SqFt", "Developer: Private", "Approval: NA Plot", "Status: Available"]
   },
   {
     "id": 2,
     "featured": false,
     "title": "Farm Plot in New Mahabaleshwar, Satara",
-    "price": "₹1200000",
+    "price": "₹12,00,000",
     "location": "New Mahabaleshwar, Satara",
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+    "image": "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder1.jpg?raw=true",
     "images": [
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop"
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder1.jpg?raw=true",
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder2.jpg?raw=true",
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder3.jpg?raw=true"
     ],
-    "description": "Farm Plot located in New Mahabaleshwar, Satara developed by Private. Status: Available.",
-    "features": ["Farm Plot", "Size: 10 Guntha", "Developer: Private", "Approval: Agricultural", "Status: Available", "Contact: 7038360686"]
+    "description": "Farm Plot located in New Mahabaleshwar, Satara.",
+    "features": ["Farm Plot", "Size: 10 Guntha", "Developer: Private", "Approval: Agricultural", "Status: Available"]
   },
   {
     "id": 3,
     "featured": false,
     "title": "1 BHK Flat in Panvel, Raigad",
-    "price": "₹6500000",
+    "price": "₹65,00,000",
     "location": "Panvel, Raigad",
     "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
     "images": [
@@ -43,28 +43,28 @@
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop"
     ],
     "description": "1 BHK Flat located in Panvel, Raigad developed by Godrej Properties. Status: Ready to Move (Resale).",
-    "features": ["1 BHK Flat", "Size: 550", "Developer: Godrej Properties", "Approval: RERA", "Status: Ready to Move (Resale)", "Contact: 7038360686"]
+    "features": ["1 BHK Flat", "Size: 550 SqFt", "Developer: Godrej Properties", "Approval: RERA", "Status: Ready to Move (Resale)"]
   },
   {
     "id": 4,
     "featured": false,
     "title": "NA Plot in Shiroli, Kolhapur",
-    "price": "₹16000000",
+    "price": "₹1,60,00,000",
     "location": "Shiroli, Kolhapur",
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+    "image": "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder1.jpg?raw=true",
     "images": [
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop"
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder1.jpg?raw=true",
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder2.jpg?raw=true",
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder3.jpg?raw=true"
     ],
-    "description": "NA Plot located in Shiroli, Kolhapur developed by Private. Status: Available.",
-    "features": ["NA Plot", "Size: 2000", "Developer: Private", "Approval: NA", "Status: Available", "Contact: 7038360686"]
+    "description": "NA Plot located in Shiroli, Kolhapur.",
+    "features": ["NA Plot", "Size: 2000 SqFt", "Developer: Private", "Approval: NA Plot", "Status: Available"]
   },
   {
     "id": 5,
     "featured": false,
     "title": "Commercial Shop in Panvel, Raigad",
-    "price": "₹15000000",
+    "price": "₹1,50,00,000",
     "location": "Panvel, Raigad",
     "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
     "images": [
@@ -73,58 +73,58 @@
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop"
     ],
     "description": "Commercial Shop located in Panvel, Raigad developed by Godrej Properties. Status: Available.",
-    "features": ["Commercial Shop", "Size: 300", "Developer: Godrej Properties", "Approval: Commercial", "Status: Available", "Contact: 7038360686"]
+    "features": ["Commercial Shop", "Size: 300 SqFt", "Developer: Godrej Properties", "Approval: Commercial", "Status: Available"]
   },
   {
     "id": 6,
     "featured": false,
-    "title": "NA Plot in Mumbai",
-    "price": "₹22000000",
-    "location": "Mumbai",
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+    "title": "NA Plot in Panvel, Raigad",
+    "price": "Inquire",
+    "location": "Panvel, Raigad",
+    "image": "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder1.jpg?raw=true",
     "images": [
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop"
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder1.jpg?raw=true",
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder2.jpg?raw=true",
+      "https://github.com/moonwalkerfreaks/Real-Estate-website/blob/Dev/assets/images/PlotImage_PlaceHolder3.jpg?raw=true"
     ],
-    "description": "NA Plot located in Mumbai developed by Private. Status: Available.",
-    "features": ["NA Plot", "Developer: Private", "Status: Available", "Contact: 7038360686"]
+    "description": "NA Plot located in Mumbai",
+    "features": ["NA Plot", "Size: 8 Acre", "Developer: Private", "Approval: NA Plot", "Status: Available"]
   },
   {
     "id": 7,
     "featured": true,
-    "title": "Luxury Villa in London",
-    "price": "₹95000000",
-    "location": "London",
+    "title": "Luxury Villa in Lonavala",
+    "price": "₹9,50,00,000",
+    "location": "Lonavala",
     "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
     "images": [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&h=600&fit=crop"
     ],
-    "description": "Luxury villa located in London with premium amenities. Status: Available.",
-    "features": ["Villa", "Luxury Property", "Status: Available", "Contact: 7038360686"]
+    "description": "Luxury villa located in Lonavala with premium amenities.",
+    "features": ["Villa", "Size: 7000 SqFt", "Developer: Private", "Approval: Registered", "Status: Available"]
   },
   {
     "id": 8,
     "featured": true,
     "title": "4 BHK Luxury Apartment in Pune",
-    "price": "₹45000000",
-    "location": "Pune",
+    "price": "₹3.25 Cr - ₹3.50 Cr",
+    "location": "NIBM, Pune",
     "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop",
     "images": [
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600607687644-c7f34b5063c4?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=800&h=600&fit=crop"
     ],
-    "description": "4 BHK luxury apartment in Pune with modern amenities. Status: Available.",
-    "features": ["4 BHK", "Luxury Apartment", "RERA Approved", "Status: Available", "Contact: 7038360687"]
+    "description": "4 BHK luxury apartment in NIBM, Pune with modern amenities.",
+    "features": ["4 BHK", "Size: 2313 - 2811 SqFt", "Developer: Tribeca", "RERA Approved", "Status: Available"]
   },
   {
     "id": 9,
     "featured": true,
     "title": "5 BHK Premium Apartment in Pune",
-    "price": "₹65000000",
+    "price": "₹4.50 Cr +",
     "location": "Pune",
     "image": "https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?w=800&h=600&fit=crop",
     "images": [
@@ -132,8 +132,8 @@
       "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600607687933-98cce4c04e1d?w=800&h=600&fit=crop"
     ],
-    "description": "5 BHK premium apartment in Pune with high-end amenities. Status: Available.",
-    "features": ["5 BHK", "Premium Apartment", "RERA Approved", "Status: Available", "Contact: 7038360688"]
+    "description": "5 BHK premium apartment in Pune with high-end amenities.",
+    "features": ["5 BHK", "Size: 3258 – 3280 SqFt" "Developer: Tribeca", "RERA Approved", "Status: Available"]
   }
   ]
 }
